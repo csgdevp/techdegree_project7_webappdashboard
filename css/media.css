@@ -1,0 +1,200 @@
+/* Media Queries */
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 55px 1fr;
+    grid-template-areas:
+      'header header'
+      'navigation main';
+  }
+
+  .main {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .traffic,
+  .social,
+  .main-header,
+  .alert {
+    grid-column: 1 / span 2;
+  }
+
+  .daily,
+  .members,
+  .message {
+    grid-column: 1 / span 1;
+  }
+
+  .mobile,
+  .activity,
+  .settings {
+    grid-column: 2 / span 1;
+  }
+
+  .separator {
+    grid-column: 1 / span 2;
+  }
+
+  .widget-container-full {
+    width: 89vw;
+  }
+
+  .widget-container-half {
+    width: 40vw;
+  }
+
+  /* Navigation */
+  .navigation {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .navigation a {
+    margin: 1em 0;
+    width: 100%;
+  }
+
+  .navigation a:first-child {
+    padding-right: 15px;
+  }
+
+  .icon-nav {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .nav-selected {
+    height: 3.5em;
+    width: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 15px;
+  }
+
+  .prueba {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  /* Dashboard Header */
+  .headline {
+    width: 20%;
+    padding-right: 15px;
+  }
+
+  .main-header-search {
+    width: 80%;
+  }
+
+  .main-header-search input {
+    width: 50%;
+  }
+
+  /* Separators General  */
+  .traffic {
+    border-bottom: 1px solid #d8d8d8;
+  }
+
+  .daily {
+    border-top: none;
+    border-right: 1px solid #d8d8d8;
+  }
+
+  .mobile {
+    border-top: none;
+  }
+
+  .members,
+  .message {
+    border-right: 1px solid #d8d8d8;
+  }
+
+  /* Traffic General Content */
+  .traffic-nav {
+    justify-content: flex-end;
+  }
+
+  .traffic-header h3,
+  .daily h3,
+  .mobile h3,
+  .social h3,
+  .members h3,
+  .activity h3,
+  .message h3,
+  .settings h3 {
+    font-size: 14px;
+  }
+
+  /* Social Stats */
+
+  .social-group {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-container {
+    width: 30%;
+    padding: 10px;
+  }
+
+  .social-text p {
+    margin-left: 15px;
+    margin-right: 0;
+  }
+  .social-text .name {
+    font-size: 16px;
+  }
+
+  .social-text .number {
+    font-size: 40px;
+  }
+
+  .activity-text {
+    font-size: 0.7em;
+  }
+
+  /* Settings */
+  .switch {
+    margin-top: 0;
+    margin-bottom: 26px;
+  }
+
+  .switch strong {
+    width: 50%;
+  }
+
+  .settings-button {
+    margin-top: 3px;
+  }
+
+  /* General */
+
+  .active {
+    padding: 5px 10px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .widget-container-full {
+    width: 93vw;
+  }
+
+  .widget-container-full {
+    margin: 0 auto;
+  }
+
+  /* Social Stats */
+  .members-text,
+  .activity-text {
+    font-size: 0.9em;
+  }
+
+  .main-header-search {
+    width: 85%;
+  }
+
+  .traffic-nav {
+    padding-right: 15px;
+  }
+}
