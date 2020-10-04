@@ -1,7 +1,7 @@
 /* Main styles */
-@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sen&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 
 :root {
   --first-color: #7477bf;
@@ -22,7 +22,7 @@
 }
 
 body {
-  font-family: 'Lato', Sen, 'Open Sans', sans-serif;
+  font-family: "Lato", Sen, "Open Sans", sans-serif;
 }
 
 .grid-container {
@@ -30,9 +30,9 @@ body {
   grid-template-columns: 100%;
   grid-template-rows: auto;
   grid-template-areas:
-    'header'
-    'navigation'
-    'main';
+    "header"
+    "navigation"
+    "main";
 }
 
 .widget-container-full {
@@ -106,7 +106,7 @@ body {
 .header h3 {
   color: #e2e3f1;
   font-weight: 500;
-  width: 100px;
+  /* width: 100px; */
   font-size: 12px;
 }
 
@@ -163,7 +163,7 @@ body {
 }
 
 .headline {
-  width: 30%;
+  width: 42%;
   text-align: center;
   color: var(--text-color);
 }
@@ -277,6 +277,7 @@ body {
   list-style: none;
   font-weight: 900;
   font-size: 10px;
+  padding: 0;
 }
 
 .traffic-nav li {
@@ -388,6 +389,7 @@ body {
 .date {
   flex-grow: 1;
   text-align: right;
+  font-size: 12px;
 }
 
 /* Recent Activity */
